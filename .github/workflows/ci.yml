@@ -25,3 +25,9 @@ jobs:
       - name: Run tests
         run: |
           PYTHONPATH=. pytest
+
+            - name: Deploy (Simulated)
+        if: success()
+        run: |
+          echo "Deploying application..."
+          echo "Deployment successful"
